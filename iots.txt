@@ -1,0 +1,103 @@
+
+NEC TV POWER	    switch.nec_tv_power	
+NEC TV STANDBY	    switch.nec_tv_standby	
+NEC TV DVI NUC	    switch.nec_tv_dvi	
+NEC TV HDMI	        switch.nec_tv_hdmi	
+NEC TV PICMODE	    switch.nec_tv_picmode	
+NEC TV ASPECT	    switch.nec_tv_aspect	
+NEC TV VOLUME UP	switch.nec_tv_vol_up	
+NEC TV VOLUME DOWN	switch.nec_tv_vol_down	
+NEC TV AUDIO INPUT	switch.nec_tv_audio_in	
+NEC TV MUTE	        switch.nec_tv_mute	
+NEC IMAC VGA-IN	    switch.nec_tv_vga	
+
+
+
+Ok	        switch.apple_tv_sovrum_1	
+back	    switch.apple_tv_sovrum_2	
+Play	    switch.apple_tv_sovrum_3	
+upp	        switch.apple_tv_sovrum_4	
+ner	        switch.apple_tv_sovrum_5	
+left	    switch.apple_tv_sovrum_6	
+right	    switch.apple_tv_sovrum_7	
+atv1_ok	    switch.apple_tv_studio_ok	
+atv2_menu	switch.apple_tv_studio_bak	
+atv3_play	switch.apple_tv_studio_play	
+atv4_upp	switch.apple_tv_studio_upp	
+atv5_ner	switch.apple_tv_studio_ner	
+atv6_left	switch.apple_tv_studio_left	
+atv7_right	switch.apple_tv_studio_right	
+
+
+LED LIGHTBLUE	switch.led_lightblue	
+LED LIGHT GREEN	switch.led_lightgreen	
+LED LIGHTRED	switch.led_lightred	
+LED PURPLE  	switch.led_purple	
+LED BLUELIGHT	switch.led_bluelight	
+LED ORANGE  	switch.led_orange	
+LED LIGHTPURPLE	switch.led_lightpurple	
+LED CYAN	    switch.led_cyan	
+LED LI ORANGE	switch.led_lightorange	
+LED PINK    	switch.led_pink	
+LED DARK CYAN	switch.led_darkcyan	
+LED YELLOW     	switch.led_yellow	
+LED POWER	    switch.led_power	
+LED DIMMA NER	switch.led_dim_down	
+LED DIMMA UPP	switch.led_dim_up	
+LED FLASH	    switch.led_flashing	
+LED STROBE	    switch.led_strobe	
+LED FADE	    switch.led_fade	
+LED SMOOTH  	switch.led_smooth	
+LED WHITE	    switch.led_white	
+LED BLUE	    switch.led_blue	
+LED GREEN	    switch.led_green	
+LED RED	        switch.led_red
+
+
+
+xiaomi_power	switch.xiaomi_on	
+xiaomi_bak	    switch.xiaomi_bak	
+xiaomi_ok	    switch.xiaomi_ok	
+xiaomi_home	    switch.xiaomi_home	
+xiaomi_upp	    switch.xiaomi_upp	
+xiaomi ner	    switch.xiaomi_ner	
+xiaomi_left 	switch.xiaomi_left	
+xiaomi_right	switch.xiaomi_right	
+xiaomi_vol_up	switch.xiaomi_vol_up	
+xiaomi_vol_ner	switch.xiaomi_vol_ner
+
+
+SAMSUNG TV UPP	    switch.samsung_tv_upp	
+SAMSUNG TV NER	    switch.samsung_tv_ner	
+SAMSUNG TV VÄNSTER	switch.samsung_tv_left	
+SAMSUNG TV HÖGER	switch.samsung_tv_right	
+SAMSUNG TV MENY	    switch.samsung_tv_menu	
+SAMSUNG TV BACK	    switch.samsung_tv_back	
+SAMSUNG TV APPLETV	switch.samsung_tv_appltv	
+SAMSUNG TV NUC	    switch.samsung_tv_nuc	
+SAMSTV TOOLS	    switch.samsung_tv_tools	
+SAMSTV ON OFF	    	
+SAM TV VOLYM UPP	switch.samsung_tv_volum_up	
+SAMSTV VOLYM NER	switch.samsung_tv_volum_ner	
+SAMSTV MUTE	        switch.samsung_tv_mute	
+
+INTEL NUC START	         switch.nuc_power_on	
+A2	                     switch.a2	
+A3	                     switch.a3	
+Blå Lampa	             switch.a4	
+Fläkt Studio	         switch.b1	
+Spotlight Studio	     switch.b2	
+Apple TV Studio	         switch.b3	
+Studio Monitors	         switch.b4	
+Sony Stereo ON-OFF	     switch.sony_stereo_power	
+Sony Stereo VOLYM Upp	 switch.sony_stereo_volum_up	
+Sony Stereo VOLYM Down   switch.sony_stereo_volum_down	
+Fläkt	                 switch.outlet_a	
+Vägg Lampa	             switch.outlet_b	
+Ledslinga Sovrum	     switch.outlet_c	
+Studio Monitorer	     switch.biltema_a	
+Spotlight	             switch.biltema_b	
+biltema c	             switch.biltema_c	
+Smartlet 1               switch.atervinningen	
+NAS	                     switch.a1	
+Ikea Elbrytare	         switch.tradfri_outlet

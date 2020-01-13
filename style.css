@@ -1,0 +1,61 @@
+.mdi{
+    font-size: 30px;
+}
+
+.serviceList{
+    width: auto;
+}
+
+h1, h2, h3{
+    font-family: helvetica;
+
+}
+
+.bg-blue{
+    background-color: #1f577c!important;
+}
+
+.remote-btn{
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+   
+
+}
+
+
+.btn-outline-light{
+    margin-right: 5px;
+}
+
+.remote-box{
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    width: 245px;
+    height: auto;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 25px;
+}
+
+.rss-input{
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+@media only screen and (min-width: 600px) {
+    .serviceList{
+        float: left;
+        margin: 2vh;
+        padding: 2vh;
+    }
+  }
+
+
+  

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Calendar API Quickstart</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1 id="time" style="font-family: helvetica"></h1>
+
+    <script type="text/javascript">
+     
+        //Clock and date realtime
+    setInterval(function(){
+        var setHtml = document.getElementById("date-time");
+        var date = new Date().toLocaleDateString();
+        var time = new Date().toLocaleTimeString();
+        setHtml.innerHTML = (date + " " + time)}, 1000)
+
+    </script>
+
+ 
+  </body>
+</html>
