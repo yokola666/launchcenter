@@ -10,13 +10,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <script defer src="/css/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Smart home local controller</title>
-
-
-</head>
-
-
-<!-- Added to check git -->
+    </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
@@ -27,28 +25,56 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand" id="date-time" href="#"></a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Start<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Studio</a>
-                </li>
+              
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Vardagsrum
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <button class="dropdown-item" id="show-livingroom-remote" data-remote="remoteControl">Fjärrkontroll</button>
+                        <button class="dropdown-item" href="#">Tak</button>
+                        <button class="dropdown-item" href="#">Hylla</button>
+                        <button class="dropdown-item" href="#">Blå Lampor</button>
+                        <button class="dropdown-item" href="#">Matbord</button>
+                        <button class="dropdown-item" href="#">Stjärna</button>
+                        <button class="dropdown-item" href="#">Ledstrip</button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Kök/Hall</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sovrum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Vardagsrum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Forum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nyheter</a>
-                </li>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Studio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <button class="dropdown-item" id="show-studio-remote" data-remote="remoteControl">Fjärrkontroll</button>
+                        <button class="dropdown-item" href="#">Tak</button>
+                        <button class="dropdown-item" href="#">Hylla</button>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sovrum
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <button class="dropdown-item" id="show-bedroom-remote" data-remote="remoteControl">Fjärrkontroll</button>
+                        <button class="dropdown-item" href="#">Lampa Sideboard</button>
+                        <button class="dropdown-item" href="#">Ledslinga</button>
+                       
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hall/Kök
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                        <button class="dropdown-item" href="#">Entré</button>
+                        <button class="dropdown-item" href="#">Tak Hall</button>
+                        <button class="dropdown-item" href="#">Bumling</button>
+                    </div>
+                  </li>
+              
             </ul>
             <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search" method="GET" target="_blank">
                 <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
@@ -68,45 +94,10 @@
     <a class="weatherwidget-io" href="https://forecast7.com/sv/58d4115d62/linkoping/" data-label_1="LINKÖPING"
         data-theme="original">LINKÖPING</a>
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" id="date-time" href="#"></a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">LIGHTS<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Take on me</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Kök/Hall</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sovrum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Vardagsrum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Forum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nyheter</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- PHILLIPS TV REMOTE  -->
 
     <div class="toggle-remotes">
-        <div class="remote-box" id="remotes-bedroom">
+        <div class="remote-box" id="remotes-bedroom" style="visibility: hidden">
             <div class="text-center">
                 <h3>Sovrum</h3>
                 <h4>Phillips TV</h4>
@@ -152,10 +143,10 @@
             <button type="button" title="Filmläge" id="script.phillips_energispar_off"
                 class="remote-btn font-weight-bold btn-secondary"><span class='mdi mdi-sleep-off'></span></button>
             <hr>
+
             <div class="text-center">
                 <h4>Apple TV</h4>
             </div>
-
             <button type="button" title="back" id="switch.apple_tv_sovrum_2"
                 class="remote-btn font-weight-bold btn-secondary"><span class='mdi mdi-reply'></span></button>
             <button type="button" title="Up" id="switch.apple_tv_sovrum_4"
@@ -175,7 +166,7 @@
 
         </div>
 
-        <div class="remote-box" id="remotes-livingroom">
+        <div class="remote-box" id="remotes-livingroom" style="visibility: hidden">
             <div class="text-center">
                 <h3>Vardagsrum</h3>
                 <h4>LG TV 75"</h4>
@@ -247,7 +238,7 @@
         </div>
     </div>
 
-    <div class="remote-box" id="remotes-studio">
+    <div class="remote-box" id="remotes-studio" style="visibility: hidden">
         <div class="text-center">
             <h3>Studio</h3>
             <h4>Nec TV"</h4>
@@ -329,9 +320,11 @@
         <!-- make remotes for applience -->
     </div>
 
+    
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="config.js"></script>
     <script src="script.js"></script>
+    
 
 </body>
 

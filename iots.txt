@@ -1,4 +1,13 @@
 
+To DOs:
+
+- Music controller - sonos get "now playing" pause/play/skip
+- Automation controller
+- Good to have "rfRemotes"
+- remote lestrip colors
+- google calendar 
+- movie releases
+
 NEC TV POWER	    switch.nec_tv_power	
 NEC TV STANDBY	    switch.nec_tv_standby	
 NEC TV DVI NUC	    switch.nec_tv_dvi	
@@ -10,8 +19,6 @@ NEC TV VOLUME DOWN	switch.nec_tv_vol_down
 NEC TV AUDIO INPUT	switch.nec_tv_audio_in	
 NEC TV MUTE	        switch.nec_tv_mute	
 NEC IMAC VGA-IN	    switch.nec_tv_vga	
-
-
 
 Ok	        switch.apple_tv_sovrum_1	
 back	    switch.apple_tv_sovrum_2	
@@ -27,7 +34,6 @@ atv4_upp	switch.apple_tv_studio_upp
 atv5_ner	switch.apple_tv_studio_ner	
 atv6_left	switch.apple_tv_studio_left	
 atv7_right	switch.apple_tv_studio_right	
-
 
 LED LIGHTBLUE	switch.led_lightblue	
 LED LIGHT GREEN	switch.led_lightgreen	
@@ -53,8 +59,6 @@ LED BLUE	    switch.led_blue
 LED GREEN	    switch.led_green	
 LED RED	        switch.led_red
 
-
-
 xiaomi_power	switch.xiaomi_on	
 xiaomi_bak	    switch.xiaomi_bak	
 xiaomi_ok	    switch.xiaomi_ok	
@@ -65,7 +69,6 @@ xiaomi_left 	switch.xiaomi_left
 xiaomi_right	switch.xiaomi_right	
 xiaomi_vol_up	switch.xiaomi_vol_up	
 xiaomi_vol_ner	switch.xiaomi_vol_ner
-
 
 SAMSUNG TV UPP	    switch.samsung_tv_upp	
 SAMSUNG TV NER	    switch.samsung_tv_ner	
