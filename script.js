@@ -278,6 +278,7 @@ var headLine = "";
 
 //Prints news with rss2json as html
 //This should be a separate feature on a separate webpage
+
 function PrintRssFeed(rss){
   console.log(rss);
   
@@ -287,7 +288,7 @@ function PrintRssFeed(rss){
   }
   $(".rss-input").append("<h4><strong>" +headLine+ "</strong></h4>");
 
-  for (let index = 0; index < rss.items.length; index++) {
+  for (var index = 0; index < rss.items.length; index++) {
 
     var title = rss.items[index].title;
     var publishdate = rss.items[index].pubDate;
