@@ -107,7 +107,6 @@ function PopulateFromHassioApi() {
       GenerateHmtl(switches);
   });
 }
-
 //generates Html
 function GenerateHmtl(list) {
   var service = list[0].entity_id.split('.')[0];
@@ -179,8 +178,7 @@ table.addEventListener('click', function (e) {
     ToggleEventBasedOnIcon(e.target.offsetParent.className);
 
   if (e.target.nodeName.toUpperCase() !== "TD") return;
-
-  ToggleEventBasedOnIcon(e.target.className);
+    ToggleEventBasedOnIcon(e.target.className);
 });
 
 //adding evlistener to remoteboxes
@@ -245,7 +243,7 @@ function ToggleEventBasedOnIcon(ev) {
 
 
 $(".dropdown-item").click(function(e){
-  var remote = e.target.id
+  var remote = e.target.id;
   
   if (remote == "show-livingroom-remote")
       if ($("#remotes-livingroom").css("visibility") == "hidden")
@@ -264,7 +262,7 @@ $(".dropdown-item").click(function(e){
       $("#remotes-studio").css("visibility", "visible")
       else
       $("#remotes-studio").css("visibility", "hidden")
-})
+});
 
 //Lists of RSS Feeds that I wanna use
 var rssFeeds = ["https://swedroid.se/forum/forums/-/index.rss", 
@@ -317,5 +315,5 @@ function PrintRssFeed(rss){
     
   }
   $(".rss-input").append("<br>");
-};
+}
 
