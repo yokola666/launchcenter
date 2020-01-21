@@ -25,7 +25,8 @@ var APICaller = (function () {
     return {
       get_posts: get_posts
     };
-  });
+  })
+();
 
 var lights = [];
 var switches = [];
