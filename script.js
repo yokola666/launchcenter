@@ -41,8 +41,6 @@ var samsung_tv = [];
 var sensors = [];
 
 
-
-
 //Populates globallists with respective service
 //splits on group
 document.addEventListener('DOMContentLoaded', PopulateFromHassioApi);
@@ -267,11 +265,6 @@ $(".dropdown-item").click(function(e){
       else
       $("#remotes-studio").css("visibility", "hidden")
 })
-
-
-
-
-
 
 //Lists of RSS Feeds that I wanna use
 var rssFeeds = ["https://swedroid.se/forum/forums/-/index.rss", 
