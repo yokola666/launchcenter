@@ -199,6 +199,24 @@ for (var i = 0; i < remotes.length; i++) {
   });
 }
 
+
+var navBarLinks = document.getElementsByClassName('dropdown-menu');
+for (var i = 0; i < navBarLinks.length; i++) {
+  var remote = navBarLinks[i];
+  remote.addEventListener('click', function (e) {
+    console.log(e);
+    
+    if (e.target.nodeName.toUpperCase() == "SPAN"){
+      ToggleEventBasedOnIcon(e.target.parentNode.id);
+    }
+  
+    if (e.target.nodeName.toUpperCase() == "BUTTON"){
+      ToggleEventBasedOnIcon(e.target.id);
+    }
+  });
+}
+
+
 // Toggle lights in list view
 function ToggleEventBasedOnIcon(ev) {
   var urlAdressHass;
