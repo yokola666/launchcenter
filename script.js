@@ -242,10 +242,9 @@ function ToggleEventBasedOnIcon(ev) {
   }
 }(document, 'script', 'weatherwidget-io-js');
 
-
+//TOOGLE REMOTES 
 $(".dropdown-item").click(function(e){
   var remote = e.target.id;
-  
   if (remote == "show-livingroom-remote")
       if ($("#remotes-livingroom").css("visibility") == "hidden")
          $("#remotes-livingroom").css("visibility", "visible")
@@ -269,7 +268,8 @@ $(".dropdown-item").click(function(e){
 var rssFeeds = ["https://swedroid.se/forum/forums/-/index.rss", 
                 "https://www.svtplay.se/genre/dokumentar/rss.xml",
                 "https://swedroid.se/forum/forums/koep-och-saelj.25/index.rss",
-                "https://www.sweclockers.com/feeds/marknad",
+                "https://www.sweclockers.com/feeds/marknad"
+                
                 ];
 
 //Date and time headline 
