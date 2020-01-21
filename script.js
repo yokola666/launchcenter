@@ -41,6 +41,7 @@ var xiaomi = [];
 var samsung_tv = [];
 var sensors = [];
 
+
 //Populates globallists with respective service
 //splits on group
 document.addEventListener('DOMContentLoaded', PopulateFromHassioApi);
@@ -93,9 +94,7 @@ function PopulateFromHassioApi() {
         if (entity_id.startsWith("sensor")) {
           sensors.push(response[index]);
         }
-        
       }
-    
       GenerateHmtl(lights);
       GenerateHmtl(scripts);
       GenerateHmtl(medias);
@@ -107,13 +106,10 @@ function PopulateFromHassioApi() {
       GenerateHmtl(xiaomi);
       GenerateHmtl(samsung_tv);
       GenerateHmtl(switches);
-      
   });
 }
-
 //generates Html
 function GenerateHmtl(list) {
-
   var service = list[0].entity_id.split('.')[0];
     if (service == "switch") {
       service = list[0].entity_id.split('_')[0];
@@ -183,8 +179,7 @@ table.addEventListener('click', function (e) {
     ToggleEventBasedOnIcon(e.target.offsetParent.className);
 
   if (e.target.nodeName.toUpperCase() !== "TD") return;
-
-  ToggleEventBasedOnIcon(e.target.className);
+    ToggleEventBasedOnIcon(e.target.className);
 });
 
 //adding evlistener to remoteboxes
@@ -247,10 +242,34 @@ function ToggleEventBasedOnIcon(ev) {
   }
 }(document, 'script', 'weatherwidget-io-js');
 
+//TOOGLE REMOTES 
+$(".dropdown-item").click(function(e){
+  var remote = e.target.id;
+  if (remote == "show-livingroom-remote")
+      if ($("#remotes-livingroom").css("visibility") == "hidden")
+         $("#remotes-livingroom").css("visibility", "visible")
+      else
+         $("#remotes-livingroom").css("visibility", "hidden")
+
+  if (remote == "show-bedroom-remote")
+      if ($("#remotes-bedroom").css("visibility") == "hidden")
+         $("#remotes-bedroom").css("visibility", "visible")
+      else
+         $("#remotes-bedroom").css("visibility", "hidden")
+  
+  if (remote == "show-studio-remote")
+      if ($("#remotes-studio").css("visibility") == "hidden")
+      $("#remotes-studio").css("visibility", "visible")
+      else
+      $("#remotes-studio").css("visibility", "hidden")
+});
+
+//Lists of RSS Feeds that I wanna use
 var rssFeeds = ["https://swedroid.se/forum/forums/-/index.rss", 
                 "https://www.svtplay.se/genre/dokumentar/rss.xml",
                 "https://swedroid.se/forum/forums/koep-och-saelj.25/index.rss",
-                "https://www.sweclockers.com/feeds/marknad",
+                "https://www.sweclockers.com/feeds/marknad"
+                
                 ];
 
 //Date and time headline 
@@ -262,9 +281,8 @@ setInterval(function(){
 
 // TESTING to get data of rss feeds
 rssFeeds.forEach(element => {
-
-var feedURL = element;
-$.ajax({
+  var feedURL = element;
+  $.ajax({
   type: 'GET',
   url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
   dataType: 'jsonp',
@@ -274,8 +292,8 @@ $.ajax({
     }
   });
 });
-var headLine = "";
 
+var headLine = "";
 //Prints news with rss2json as html
 //This should be a separate feature on a separate webpage
 
@@ -300,3 +318,4 @@ function PrintRssFeed(rss){
   }
   $(".rss-input").append("<br>");
 }
+
