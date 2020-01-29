@@ -41,7 +41,6 @@ var xiaomi = [];
 var samsung_tv = [];
 var sensors = [];
 
-
 //Populates globallists with respective service
 //splits on group
 document.addEventListener('DOMContentLoaded', PopulateFromHassioApi);
@@ -98,7 +97,6 @@ function PopulateFromHassioApi() {
       GenerateHmtl(lights);
       GenerateHmtl(scripts);
       GenerateHmtl(medias);
-      
       GenerateHmtl(philips_tv);
       GenerateHmtl(nec_tv);
       GenerateHmtl(apple_tv);
@@ -121,9 +119,7 @@ function GenerateHmtl(list) {
       }
       service = service.split('_')[1].toUpperCase()
     }
-  
   console.log(list);
-    
 
   $(".table-placement").append("<div class='serviceList'><h1 class='font-weight-bold'>" + service + "</h1><table id='my-table' class='col-12'>" +
     "<tbody class='col-3' id=" + service + "></tbody></table></div>");
@@ -181,7 +177,6 @@ var table = document.getElementById('main-container');
 table.addEventListener('click', function (e) {
   if (e.target.className.includes("mdi"))
     ToggleEventBasedOnIcon(e.target.offsetParent.className);
-
   if (e.target.nodeName.toUpperCase() !== "TD") return;
     ToggleEventBasedOnIcon(e.target.className);
 });
@@ -192,34 +187,28 @@ for (var i = 0; i < remotes.length; i++) {
   var remote = remotes[i];
   remote.addEventListener('click', function (e) {
     // console.log(e);
-    
     if (e.target.nodeName.toUpperCase() == "SPAN"){
       ToggleEventBasedOnIcon(e.target.parentNode.id);
     }
-  
     if (e.target.nodeName.toUpperCase() == "BUTTON"){
       ToggleEventBasedOnIcon(e.target.id);
     }
   });
 }
-
 
 var navBarLinks = document.getElementsByClassName('dropdown-menu');
 for (var i = 0; i < navBarLinks.length; i++) {
   var remote = navBarLinks[i];
   remote.addEventListener('click', function (e) {
     console.log(e);
-    
     if (e.target.nodeName.toUpperCase() == "SPAN"){
       ToggleEventBasedOnIcon(e.target.parentNode.id);
     }
-  
     if (e.target.nodeName.toUpperCase() == "BUTTON"){
       ToggleEventBasedOnIcon(e.target.id);
     }
   });
 }
-
 
 // Toggle lights in list view
 function ToggleEventBasedOnIcon(ev) {
@@ -327,13 +316,10 @@ function PrintRssFeed(rss){
     headLine = rss.feed.title;
   }
   $(".rss-input").append("<h4><strong>" +headLine+ "</strong></h4>");
-
   for (var index = 0; index < rss.items.length; index++) {
-
     var title = rss.items[index].title;
     var publishdate = rss.items[index].pubDate;
     var link = rss.items[index].link;
-
     $(".rss-input").append("<div class="+title+"><strong><a href="+link+" target='_blank'>" + title + "</a></strong></div>");
     $(".rss-input").append("<div>" + publishdate + "</div>");
     
@@ -341,3 +327,12 @@ function PrintRssFeed(rss){
   $(".rss-input").append("<br>");
 }
 
+document.addEventListener('DOMContentLoaded', Testing);
+
+function Testing(){
+  var nasdaq = document.getElementById("nasdaq");
+  var sto = document.getElementById("sto");
+  var date = new Date().toLocaleDateString();
+  var time = new Date().toLocaleTimeString();
+  nasdaq.innerHTML = "<p class='text-white'>" + date + " " + time + "</p>";
+  sto.innerHTML =  "<p class='text-white'>" + date + " " + time + "</p>";}

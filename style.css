@@ -58,6 +58,17 @@ h1, h2, h3{
     margin-right: 10px;
 }
 
+#time-container{
+    background-color: #1f577c!important;
+    margin: 0;
+    padding: 0;
+}
+
+
+.ticker p{
+    margin: 0;
+    padding: 0;
+}
 @media only screen and (min-width: 600px) {
     .serviceList{
         float: left;
