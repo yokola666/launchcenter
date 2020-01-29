@@ -10,11 +10,21 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <script defer src="/css/js/all.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+ 
+
+
+
     <title>Smart home local controller</title>
-    </head>
+</head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
@@ -26,41 +36,69 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand" id="date-time" href="#"></a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              
+
                 <!-- NAVBAR LIVINGROOM DROPDOWN START -->
                 <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Vardagsrum
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Vardagsrum
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <button class="dropdown-item" id="show-livingroom-remote" data-remote="remoteControl"><span class="mdi mdi-remote"></span>Fjärrkontroll</button>
-                        <button class="dropdown-item" id="light.vardagsrum_tak" href="#"><span class='mdi mdi-ceiling-light'></span>Tak</button>
-                        <button class="dropdown-item" id="light.hyllan_2" href="#"><span class='mdi mdi-lamp'></span>Hylla</button>
-                        <button class="dropdown-item" id="switch.a4" href="#"><span class='mdi mdi-lamp '></span>Blå Lampor</button>
-                        <button class="dropdown-item" id="light.matbord_1" href="#"><span class='mdi mdi-ceiling-light'></span>Matbord</button>
-                        <button class="dropdown-item" id="light.matbord_2" href="#"><span class='mdi mdi-ceiling-light'></span>Matbord</button>
+                        <button class="dropdown-item" id="show-livingroom-remote" data-remote="remoteControl"><span
+                                class="mdi mdi-remote"></span>Fjärrkontroll</button>
+                        <button class="dropdown-item" id="light.vardagsrum_tak" href="#"><span
+                                class='mdi mdi-ceiling-light'></span>Tak</button>
+                        <button class="dropdown-item" id="light.hyllan_2" href="#"><span
+                                class='mdi mdi-lamp'></span>Hylla</button>
+                        <button class="dropdown-item" id="switch.a4" href="#"><span class='mdi mdi-lamp '></span>Blå
+                            Lampor</button>
+                        <button class="dropdown-item" id="light.matbord_1" href="#"><span
+                                class='mdi mdi-ceiling-light'></span>Matbord</button>
+                        <button class="dropdown-item" id="light.matbord_2" href="#"><span
+                                class='mdi mdi-ceiling-light'></span>Matbord</button>
+                        <button class="dropdown-item" id="switch.a1" href="#"><span
+                                class='mdi mdi-ceiling-light'></span>Stjärna</button>
+                        <button class="dropdown-item" id="script.wake_livingroom" href="#"><span
+                                class='mdi mdi-food'></span>START LIVINGROOM</button>
+                        <button class="dropdown-item" id="script.wake_livingroom" href="#"><span
+                                class='mdi mdi-food-off'></span>START LIVINGROOM</button>
 
-                        <button class="dropdown-item" id="switch.a1" href="#"><span class='mdi mdi-ceiling-light'></span>Stjärna</button>
-                        <button class="dropdown-item" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="mdi mdi-led-on"></span> Ledstrip</button>
+                        <button class="dropdown-item" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="mdi mdi-led-on"></span>
+                            Ledstrip</button>
 
                         <!-- NAVBAR LEDSTRIP LIVINGROOM START-->
-                          <div class="dropdown-menu" id="ledStripColor" aria-labelledby="navbarDropdownMenuLink">
-                            <button class="ledstrip" title="on" style="color: red" id="switch.led_power" ><span class="mdi mdi-power" ></span></button>
-                            <button class="ledstrip" title="off" style="color: black" id="switch.led_power"><span class="mdi mdi-power-off" ></span></button>
-                            <button class="ledstrip" title="dimDown" style="color: black" id="switch.led_dim_down"><span class="mdi mdi-weather-sunset-down" ></span></button>
-                            <button class="ledstrip" title="dimUp" style="color: black" id="switch.led_dim_up"><span class="mdi mdi-weather-sunset-up" ></span></button>
-                            <button class="ledstrip" title="Fade" style="color: black" id="switch.led_fade"><span class="mdi mdi-rotate-3d-variant" ></span></button>
-                            <button class="ledstrip" title="Smooth" style="color: black" id="switch.led_smooth"><span class="mdi mdi-rotate-left" ></span></button>
-                            <button class="ledstrip" style="color: red" id="switch.led_red"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: orange" id="switch.led_orange"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: green" id="switch.led_green"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: blue" id="switch.led_blue"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: lightblue" id="switch.led_lightblue"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: pink" id="switch.led_lightpurple"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: purple" id="switch.led_purple"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: lightgreen" id="switch.led_lightgreen"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                            <button class="ledstrip" style="color: yellow" id="switch.led_yellow"><span class="mdi mdi-checkbox-blank-circle" ></span></button>
-                          
+                        <div class="dropdown-menu" id="ledStripColor" aria-labelledby="navbarDropdownMenuLink">
+                            <button class="ledstrip" title="on" style="color: red" id="switch.led_power"><span
+                                    class="mdi mdi-power"></span></button>
+                            <button class="ledstrip" title="off" style="color: black" id="switch.led_power"><span
+                                    class="mdi mdi-power-off"></span></button>
+                            <button class="ledstrip" title="dimDown" style="color: black" id="switch.led_dim_down"><span
+                                    class="mdi mdi-weather-sunset-down"></span></button>
+                            <button class="ledstrip" title="dimUp" style="color: black" id="switch.led_dim_up"><span
+                                    class="mdi mdi-weather-sunset-up"></span></button>
+                            <button class="ledstrip" title="Fade" style="color: black" id="switch.led_fade"><span
+                                    class="mdi mdi-rotate-3d-variant"></span></button>
+                            <button class="ledstrip" title="Smooth" style="color: black" id="switch.led_smooth"><span
+                                    class="mdi mdi-rotate-left"></span></button>
+                            <button class="ledstrip" style="color: red" id="switch.led_red"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: orange" id="switch.led_orange"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: green" id="switch.led_green"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: blue" id="switch.led_blue"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: lightblue" id="switch.led_lightblue"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: pink" id="switch.led_lightpurple"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: purple" id="switch.led_purple"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: lightgreen" id="switch.led_lightgreen"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
+                            <button class="ledstrip" style="color: yellow" id="switch.led_yellow"><span
+                                    class="mdi mdi-checkbox-blank-circle"></span></button>
                         </div>
                         <!-- NAVBAR LEDSTRIP LIVINGROOM END-->
                     </div>
@@ -68,51 +106,88 @@
                 <!-- NAVBAR LIVINGROOM DROPDOWN END  -->
 
                 <!-- NAVBAR STUDIO DROPDOWN START -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Studio
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Studio
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <button class="dropdown-item" id="show-studio-remote" data-remote="remoteControl"><span class="mdi mdi-remote"></span>Fjärrkontroll</button>
-                        <button class="dropdown-item" href="#" id="light.studio_tak"><span class='mdi mdi-lightbulb-outline'></span>Tak</button>
-                        <button class="dropdown-item" href="#" id="switch.b2"><span class='mdi mdi-spotlight'></span>Spotlight</button>
-                        <button class="dropdown-item" href="#" id="switch.nuc_power_on"><span class='mdi mdi-laptop'></span>NUC</button>
-                        <button class="dropdown-item" href="#" id="switch.b1"><span class='mdi mdi-wifi'></span>AcessPoint</button>
-                        <button class="dropdown-item" href="#" id="switch.tradfri_outlet"><span class='mdi mdi-fan'></span>Fläkt</button>
-                        <button class="dropdown-item" href="#" id="switch.b3"><span class='mdi mdi-apple'></span>AppleTV</button>
-                        <button class="dropdown-item" href="#" id="switch.b4"><span class='mdi mdi-speaker'></span>Studio Monitor</button>
-
-
-
+                        <button class="dropdown-item" id="show-studio-remote" data-remote="remoteControl"><span
+                                class="mdi mdi-remote"></span>Fjärrkontroll</button>
+                        <button class="dropdown-item" href="#" id="light.studio_tak"><span
+                                class='mdi mdi-lightbulb-outline'></span>Tak</button>
+                        <button class="dropdown-item" href="#" id="switch.b2"><span
+                                class='mdi mdi-spotlight'></span>Spotlight</button>
+                        <button class="dropdown-item" href="#" id="switch.nuc_power_on"><span
+                                class='mdi mdi-laptop'></span>NUC</button>
+                        <button class="dropdown-item" href="#" id="switch.b1"><span
+                                class='mdi mdi-wifi'></span>AcessPoint</button>
+                        <button class="dropdown-item" href="#" id="switch.tradfri_outlet"><span
+                                class='mdi mdi-fan'></span>Fläkt</button>
+                        <button class="dropdown-item" href="#" id="switch.b3"><span
+                                class='mdi mdi-apple'></span>AppleTV</button>
+                        <button class="dropdown-item" href="#" id="switch.b4"><span
+                                class='mdi mdi-speaker'></span>Studio Monitor</button>
+                        <button class="dropdown-item" href="#" id="script.wake_studio"><span
+                                class='mdi mdi-laptop'></span>START STUDIO</button>
+                        <button class="dropdown-item" href="#" id="script.kill_studio"><span
+                                class='mdi mdi-laptop'></span>KILL STUDIO</button>
                     </div>
-                  </li>
+                </li>
                 <!-- NAVBAR STUDIO DROPDOWN END -->
 
                 <!-- NAVBAR BEDROOM DROPDOWN START -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Sovrum
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Sovrum
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <button class="dropdown-item" id="show-bedroom-remote" data-remote="remoteControl"><span class="mdi mdi-remote"></span>Fjärrkontroll</button>
-                        <button class="dropdown-item" id="switch.outlet_b" href="#"><span class="mdi mdi-lightbulb-on-outline"></span> Sideboard</button>
-                        <button class="dropdown-item" id="switch.outlet_c" href="#"><span class="mdi mdi-led-on"></span>Ledslinga</button>
+                        <button class="dropdown-item" id="show-bedroom-remote" data-remote="remoteControl"><span
+                                class="mdi mdi-remote"></span>Fjärrkontroll</button>
+                        <button class="dropdown-item" id="switch.outlet_b" href="#"><span
+                                class="mdi mdi-lightbulb-on-outline"></span> Sideboard</button>
+                        <button class="dropdown-item" id="switch.outlet_c" href="#"><span
+                                class="mdi mdi-led-on"></span>Ledslinga</button>
                     </div>
-                  </li>
+                </li>
                 <!-- NAVBAR BEDROOM DROPDOWN END -->
-                
+
                 <!-- NAVBAR HALLWAY/KITCHEN DROPDOWN START-->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Hall/Kök
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hall/Kök
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <button class="dropdown-item" id="light.kok_tak" href="#"><span class='mdi mdi-ceiling-light'></span>Entré</button>
-                        <button class="dropdown-item" id="light.hall_tak" href="#"><span class='mdi mdi-ceiling-light'></span>Tak Hall</button>
-                        <button class="dropdown-item" id="light.spegel_1" href="#"><span class='mdi mdi-ceiling-light'></span>Bumling</button>
+                        <button class="dropdown-item" id="light.kok_tak" href="#"><span
+                                class='mdi mdi-ceiling-light'></span>Entré</button>
+                        <button class="dropdown-item" id="light.hall_tak" href="#"><span
+                                class='mdi mdi-ceiling-light'></span>Tak Hall</button>
+                        <button class="dropdown-item" id="light.spegel_1" href="#"><span
+                                class='mdi mdi-ceiling-light'></span>Bumling</button>
                     </div>
-                  </li>
-                <!-- NAVBAR HALLWAY/KITCHEN DROPDOWN END-->
+                </li>
+                <!-- NAVBAR HALLWAY/KITCHEN DROPDOWN END  -->
+
+                     <!-- NAVBAR Automation/scripts START-->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Automations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <button class="dropdown-item" id="script.1521587143513" href="#"><span
+                                    class='mdi mdi-ceiling-light'></span>Turn off lights</button>
+                            <button class="dropdown-item" id="script.1517192427123" href="#"><span
+                                    class='mdi mdi-raspberry-pi'></span>Reboot Hassio</button>
+                            <button class="dropdown-item" id="script.playplaylistonallsonos" href="#"><span
+                                    class='mdi mdi-music'></span>Fetplaylist on Sonos</button>
+                        </div>
+                    </li>
+                     <!-- NAVBAR Automation/scripts START-->
+    
+
             </ul>
 
             <!-- SEARCHBOX START-->
@@ -203,7 +278,6 @@
                     class='mdi mdi-reply'></span></button>
             <button type="button" title="down" id="switch.apple_tv_sovrum_5"
                 class="remote-btn font-weight-bold btn-primary"><span class='mdi mdi-arrow-down'></span></button>
-
         </div>
 
         <div class="remote-box" id="remotes-livingroom" style="visibility: hidden">
@@ -353,19 +427,28 @@
 
     <!-- MAIN -->
 
+    <div id="gCal">
+        <button onclick="authenticate().then(loadClient)">authorize and load</button>
+        <button onclick="execute()">get darlings</button>
+        <button onclick="getnext()">get jocke.ekstrand</button>
+    
+        <div id="calendars">
+    
+        </div>
+    </div>
+
     <div class="container-fluid" id="main-container">
         <div class="table-placement">
         </div>
 
         <!-- make remotes for applience -->
     </div>
-
-    
+   
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="config.js"></script>
-    <script src="script.js"></script>
-    
+ <script src="https://apis.google.com/js/api.js"></script>
+    <script src="/configs/config.js"></script>
+    <script src="script.js"></script>   
+    <script src="gCal.js"></script>
 
 </body>
-
 </html>

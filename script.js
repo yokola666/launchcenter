@@ -98,6 +98,7 @@ function PopulateFromHassioApi() {
       GenerateHmtl(lights);
       GenerateHmtl(scripts);
       GenerateHmtl(medias);
+      
       GenerateHmtl(philips_tv);
       GenerateHmtl(nec_tv);
       GenerateHmtl(apple_tv);
@@ -121,6 +122,9 @@ function GenerateHmtl(list) {
       service = service.split('_')[1].toUpperCase()
     }
   
+  console.log(list);
+    
+
   $(".table-placement").append("<div class='serviceList'><h1 class='font-weight-bold'>" + service + "</h1><table id='my-table' class='col-12'>" +
     "<tbody class='col-3' id=" + service + "></tbody></table></div>");
 
