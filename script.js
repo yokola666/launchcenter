@@ -319,3 +319,8 @@ function PrintRssFeed(rss){
   $(".rss-input").append("<br>");
 };
 
+function ShowTime(clockSlag){
+  var time = new Date(clockSlag);
+  var stockTime = new Date(15:30)
+
+}
