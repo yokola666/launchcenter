@@ -1,5 +1,5 @@
-
-To DOs:
+﻿
+To dos!
 
 - Music controller - sonos get "now playing" pause/play/skip
 - Automation controller
@@ -104,3 +104,5 @@ biltema c	             switch.biltema_c
 Smartlet 1               switch.atervinningen	
 NAS	                     switch.a1	
 Ikea Elbrytare	         switch.tradfri_outlet
+
+tset
