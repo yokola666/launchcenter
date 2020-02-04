@@ -1,6 +1,4 @@
-
 document.addEventListener("DOMContentLoaded", PrintTime)
-
 
 function PrintTime(){
 
@@ -13,15 +11,11 @@ function PrintTime(){
     var nasdaq = document.getElementById("nasdaq");
     nasdaq.innerHTML =  ( currHrs)  + ":" + ( currMins) + ":" + (currSec) + " now!<br>" 
     nasdaq.innerHTML +=  ("0" +(15 - currHrs)).slice(-2)  + ":" +("0" + (29 - currMins)).slice(-2) + ":" + ("0"+ (60 - currSec)).slice(-2) + " left until 15.30" ;
-    
+
     nasdaq.innerHTML += "test"
     console.log("Now");
-    console.log("Now");
-       
-    
-    setInterval(PrintTime, 1000)
-    console.log();
-    console.log();
-    
 
+
+    setInterval(PrintTime, 1000)
 }
+  
