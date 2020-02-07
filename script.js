@@ -122,7 +122,7 @@ function GenerateHmtl(list) {
       service = service.split('_')[1].toUpperCase()
     }
   
-  console.log(list);
+  // console.log(list);
     
 
   $(".table-placement").append("<div class='serviceList'><h1 class='font-weight-bold'>" + service + "</h1><table id='my-table' class='col-12'>" +
@@ -133,7 +133,7 @@ function GenerateHmtl(list) {
     var entity_id = list[element].entity_id;
     var friendly_name = list[element].attributes.friendly_name;
     var state = list[element].state;
-    console.log(state);
+    // console.log(state);
 
     $("#" + service).append("<tr>");
     $("#" + service).append("<td class=" + entity_id + "><strong>" + friendly_name + "</strong></td>");
@@ -208,7 +208,7 @@ var navBarLinks = document.getElementsByClassName('dropdown-menu');
 for (var i = 0; i < navBarLinks.length; i++) {
   var remote = navBarLinks[i];
   remote.addEventListener('click', function (e) {
-    console.log(e);
+    // console.log(e);
     
     if (e.target.nodeName.toUpperCase() == "SPAN"){
       ToggleEventBasedOnIcon(e.target.parentNode.id);
@@ -320,7 +320,7 @@ var headLine = "";
 //This should be a separate feature on a separate webpage
 
 function PrintRssFeed(rss){
-  console.log(rss);
+  // console.log(rss);
   
   headLine = rss.feed.author;
   if (headLine == null || headLine == "") {
