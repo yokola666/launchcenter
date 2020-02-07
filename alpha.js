@@ -53,13 +53,19 @@ for (let i = 0; i < stockList.length; i++) {
             console.log(endPoint);
         }
         else{
-            var name = stocks["01. symbol"].replace("STO", "");
+            var name = stocks["01. symbol"].replace("STO:", "");
             var percent = stocks["10. change percent"]
+
+            var red = ""
+            var green = ""
          
             if (percent.startsWith("-"))
-            stockTickers.innerHTML += "<b> " + name +"</b>"+ ": <span style='color: red'>" + percent + "</span>    "
+                red = "<span style='color: red'>" + percent + "</span>"
             else
-            stockTickers.innerHTML += "<b> " + name +"</b>"+ ": <span style='color: green'>" + percent + "</span>    "
+            green = "<span style='color: green'>" + percent + "</span>"
+
+            stockTickers.innerHTML += "<b> " + name +"</b>"+ ": " +red + green 
+
         }
     })
     
